@@ -1,0 +1,199 @@
+LOG:  could not bind IPv6 socket: Address already in use
+HINT:  Is another postmaster already running on port 5432? If not, wait a few seconds and retry.
+LOG:  database system was shut down at 2019-02-12 11:04:06 +07
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "francois" does not exist
+FATAL:  database "primon_development" does not exist
+FATAL:  database "primon_development" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  database "interfaces_development" does not exist
+ERROR:  database "interfaces_development" already exists
+STATEMENT:  CREATE DATABASE "interfaces_development" ENCODING = 'utf8'
+ERROR:  type "hstore" does not exist at character 91
+STATEMENT:  CREATE TABLE "zones" ("id" bigserial primary key, "monitored_url_id" bigint, "identifier" hstore, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_a4dbaefc37"
+	FOREIGN KEY ("monitored_url_id")
+	  REFERENCES "monitored_urls" ("id")
+	)
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT  "monitored_urls".* FROM "monitored_urls" ORDER BY "monitored_urls"."id" ASC LIMIT $1
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT  "scraping_results".* FROM "scraping_results" ORDER BY "scraping_results"."id" DESC LIMIT $1
+FATAL:  database "interfaces_test" does not exist
+ERROR:  update or delete on table "monitored_urls" violates foreign key constraint "fk_rails_f19bfa1f4b" on table "scraping_results"
+DETAIL:  Key (id)=(3) is still referenced from table "scraping_results".
+STATEMENT:  DELETE FROM "monitored_urls" WHERE "monitored_urls"."id" = $1
+ERROR:  update or delete on table "monitored_urls" violates foreign key constraint "fk_rails_f19bfa1f4b" on table "scraping_results"
+DETAIL:  Key (id)=(4) is still referenced from table "scraping_results".
+STATEMENT:  DELETE FROM "monitored_urls"
+ERROR:  update or delete on table "monitored_urls" violates foreign key constraint "fk_rails_f19bfa1f4b" on table "scraping_results"
+DETAIL:  Key (id)=(4) is still referenced from table "scraping_results".
+STATEMENT:  DELETE FROM "monitored_urls"
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT "scraping_results".* FROM "scraping_results" WHERE "scraping_results"."monitored_url_id" = $1
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT  "scraping_results".* FROM "scraping_results" ORDER BY "scraping_results"."id" DESC LIMIT $1
+ERROR:  database "primon_development" is being accessed by other users
+DETAIL:  There is 1 other session using the database.
+STATEMENT:  DROP DATABASE IF EXISTS "primon_development"
+FATAL:  database "interfaces_test" does not exist
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+WARNING:  there is no transaction in progress
+ERROR:  null value in column "type" violates not-null constraint
+DETAIL:  Failing row contains (917386099, null, test instance, 615315219, 856891417, 2019-02-14 07:13:09.778572, 2019-02-14 07:13:09.778572, null).
+STATEMENT:  INSERT INTO "registration_notes" ("message", "registration_id", "user_id", "created_at", "updated_at") VALUES ('test instance', 615315219, 856891417, '2019-02-14 07:13:09.778572', '2019-02-14 07:13:09.778572') RETURNING "id"
+ERROR:  null value in column "charge_id" violates not-null constraint
+DETAIL:  Failing row contains (1017765176, oflp_5exf79mbjxur692se4r, 344226862, null, 1021786726, VirtualAccountPayment, virtual_account_sinarmas, null, null, 2019-02-14 07:24:33.569073, 2019-02-14 07:24:33.569073, null, null, {}, null).
+STATEMENT:  INSERT INTO "offline_payments" ("uid", "account_id", "credential_id", "type", "backend_type", "created_at", "updated_at") VALUES ('oflp_5exf79mbjxur692se4r', 344226862, 1021786726, 'VirtualAccountPayment', 'virtual_account_sinarmas', '2019-02-14 07:24:33.569073', '2019-02-14 07:24:33.569073') RETURNING "id"
+ERROR:  null value in column "charge_id" violates not-null constraint
+DETAIL:  Failing row contains (1017765179, oflp_test_5exf79r4b4sacocn895, 536096393, null, 1021786726, VirtualAccountPayment, virtual_account_sinarmas, null, null, 2019-02-14 07:24:34.200943, 2019-02-14 07:24:34.200943, null, null, {}, null).
+STATEMENT:  INSERT INTO "offline_payments" ("uid", "account_id", "credential_id", "type", "backend_type", "created_at", "updated_at") VALUES ('oflp_test_5exf79r4b4sacocn895', 536096393, 1021786726, 'VirtualAccountPayment', 'virtual_account_sinarmas', '2019-02-14 07:24:34.200943', '2019-02-14 07:24:34.200943') RETURNING "id"
+ERROR:  null value in column "type" violates not-null constraint
+DETAIL:  Failing row contains (917386099, null, test instance, 615315219, 856891417, 2019-02-14 07:25:03.259957, 2019-02-14 07:25:03.259957, null).
+STATEMENT:  INSERT INTO "registration_notes" ("message", "registration_id", "user_id", "created_at", "updated_at") VALUES ('test instance', 615315219, 856891417, '2019-02-14 07:25:03.259957', '2019-02-14 07:25:03.259957') RETURNING "id"
+ERROR:  null value in column "charge_id" violates not-null constraint
+DETAIL:  Failing row contains (1020144320, ofsp_5exf8ot3dytktsddrvm, internet_banking_scb, 620370136, null, 583708252, null, null, null, null, 2019-02-14 07:28:35.924648, 2019-02-14 07:28:35.924648, null, null, null).
+STATEMENT:  INSERT INTO "offsite_payments" ("uid", "backend_type", "account_id", "credential_id", "created_at", "updated_at") VALUES ('ofsp_5exf8ot3dytktsddrvm', 'internet_banking_scb', 620370136, 583708252, '2019-02-14 07:28:35.924648', '2019-02-14 07:28:35.924648') RETURNING "id"
+ERROR:  null value in column "charge_id" violates not-null constraint
+DETAIL:  Failing row contains (1017765179, oflp_5expb7ynrjxajm4u7j7, 344226862, null, 1021786726, VirtualAccountPayment, virtual_account_sinarmas, null, null, 2019-02-15 00:38:27.843764, 2019-02-15 00:38:27.843764, null, null, {}, null).
+STATEMENT:  INSERT INTO "offline_payments" ("uid", "account_id", "credential_id", "type", "backend_type", "created_at", "updated_at") VALUES ('oflp_5expb7ynrjxajm4u7j7', 344226862, 1021786726, 'VirtualAccountPayment', 'virtual_account_sinarmas', '2019-02-15 00:38:27.843764', '2019-02-15 00:38:27.843764') RETURNING "id"
+ERROR:  null value in column "charge_id" violates not-null constraint
+DETAIL:  Failing row contains (1017765180, oflp_test_5expb80epbff6r2lacx, 536096393, null, 1021786726, VirtualAccountPayment, virtual_account_sinarmas, null, null, 2019-02-15 00:38:28.072947, 2019-02-15 00:38:28.072947, null, null, {}, null).
+STATEMENT:  INSERT INTO "offline_payments" ("uid", "account_id", "credential_id", "type", "backend_type", "created_at", "updated_at") VALUES ('oflp_test_5expb80epbff6r2lacx', 536096393, 1021786726, 'VirtualAccountPayment', 'virtual_account_sinarmas', '2019-02-15 00:38:28.072947', '2019-02-15 00:38:28.072947') RETURNING "id"
+ERROR:  null value in column "charge_id" violates not-null constraint
+DETAIL:  Failing row contains (1020144322, ofsp_5expc9boy3mt0n870i5, internet_banking_scb, 620370136, null, 583708252, null, null, null, null, 2019-02-15 00:41:24.738126, 2019-02-15 00:41:24.738126, null, null, null).
+STATEMENT:  INSERT INTO "offsite_payments" ("uid", "backend_type", "account_id", "credential_id", "created_at", "updated_at") VALUES ('ofsp_5expc9boy3mt0n870i5', 'internet_banking_scb', 620370136, 583708252, '2019-02-15 00:41:24.738126', '2019-02-15 00:41:24.738126') RETURNING "id"
+ERROR:  column "final_price" does not exist at character 112
+STATEMENT:  SELECT  "scraping_results".* FROM "scraping_results" WHERE "scraping_results"."monitored_url_id" = $1 ORDER BY final_price ASC LIMIT $2
+ERROR:  missing FROM-clause entry for table "result" at character 112
+STATEMENT:  SELECT  "scraping_results".* FROM "scraping_results" WHERE "scraping_results"."monitored_url_id" = $1 ORDER BY result.final_price ASC LIMIT $2
+ERROR:  syntax error at or near ":" at character 118
+STATEMENT:  SELECT  "scraping_results".* FROM "scraping_results" WHERE "scraping_results"."monitored_url_id" = $1 ORDER BY result:final_price ASC LIMIT $2
+ERROR:  null value in column "type" violates not-null constraint
+DETAIL:  Failing row contains (917386099, null, test instance, 615315219, 856891417, 2019-02-15 01:10:29.059202, 2019-02-15 01:10:29.059202, null).
+STATEMENT:  INSERT INTO "registration_notes" ("message", "registration_id", "user_id", "created_at", "updated_at") VALUES ('test instance', 615315219, 856891417, '2019-02-15 01:10:29.059202', '2019-02-15 01:10:29.059202') RETURNING "id"
+ERROR:  cached plan must not change result type
+STATEMENT:  SELECT "scraping_results".* FROM "scraping_results" WHERE "scraping_results"."monitored_url_id" = $1
+ERROR:  column scraping_results.desc does not exist at character 233
+STATEMENT:  SELECT "scraping_results".* FROM "scraping_results" INNER JOIN "monitored_urls" ON "scraping_results"."monitored_url_id" = "monitored_urls"."id" WHERE "monitored_urls"."product_id" = $1 ORDER BY "scraping_results"."created_at" ASC, "scraping_results"."desc" ASC
+LOG:  autovacuum launcher shutting down
+LOG:  received smart shutdown request
+LOG:  shutting down
+LOG:  database system is shut down

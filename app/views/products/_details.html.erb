@@ -1,0 +1,39 @@
+<% present product do |product| %>
+  <div class="panel">
+    <h3>Product Details</h3>
+    <div class="panel_contents">
+      <div class="attributes_table product" id="attributes_table_product_3">
+        <table border="0" cellspacing="0" cellpadding="0">
+          <tbody>
+          <tr class="row row-name">
+            <th>Name</th>
+            <td><%= product.name %></td>
+          </tr>
+          <tr class="row row-providers">
+            <th>Providers</th>
+            <td>
+              <%= product.providers %>
+            </td>
+          </tr>
+          <tr class="row row-all_time_high_price">
+            <th>Last change</th>
+            <td><%= product.last_change %></td>
+          </tr>
+          <tr class="row row-all_time_low_price">
+            <th>All Time Low Price</th>
+            <td><%= product.all_time_low_price %></td>
+          </tr>
+          <tr class="row row-all_time_high_price">
+            <th>All Time High Price</th>
+            <td><%= product.all_time_high_price %></td>
+          </tr>
+          <tr class="row row-all_time_high_price">
+            <th>Current Lowest Price</th>
+            <td><%= product.current_lowest %></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+<% end %>

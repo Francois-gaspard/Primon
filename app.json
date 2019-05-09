@@ -1,0 +1,25 @@
+{
+  "name": "Primon",
+  "description": "Price monitoring app for Powerbuy, Homepro, Robinson, BigC, Boonthavorn, Pantipmarket, ...",
+  "repository": "https://github.com/Francois-gaspard/primon",
+  "logo": "",
+  "keywords": [
+    "price monitoring",
+    "thailand"
+  ],
+  "scripts": {
+    "postdeploy": "bundle exec rails db:migrate db:seed"
+  },
+  "success_url": "/admin",
+  "addons": [
+    {
+      "plan": "heroku-postgresql:hobby-dev"
+    },
+    {
+      "plan": "scheduler:standard"
+    },
+    {
+     "plan": "sendgrid:starter"
+    }
+  ]
+}

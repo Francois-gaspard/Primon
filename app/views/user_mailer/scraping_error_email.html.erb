@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+</head>
+<body>
+<h1><%= @monitored_url.product.name %> scraping failure!</h1>
+<p><%= @message %></p>
+<%= link_to "View in dashboard", admin_monitored_url_url(@monitored_url), host: "http://primon.herokuapp.com" %>
+<br>
+<%= link_to "View on website", @monitored_url.url %>
+<%= render partial: "products/details", locals: { product: @monitored_url.product} %>
+</body>
+</html>
