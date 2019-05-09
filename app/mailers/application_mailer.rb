@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: User.email
+  default from: "primon@gedeon.be"
   layout 'mailer'
 end
